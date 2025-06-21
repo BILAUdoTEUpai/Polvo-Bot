@@ -77,4 +77,4 @@ async def embed(interaction: discord.Interaction, titulo: str, descricao: str, c
 # Adicione mais comandos aqui se quiser
 
 import os
-bot.run(os.environ['DISCORD_TOKEN'])
+aclient.run(os.environ['DISCORD_TOKEN'])
