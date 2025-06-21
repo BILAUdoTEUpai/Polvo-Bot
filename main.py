@@ -74,6 +74,5 @@ async def embed(interaction: discord.Interaction, titulo: str, descricao: str, c
     except ValueError:
         await interaction.response.send_message("Cor inválida. Use formato hexadecimal, ex: `#00ff00`.", ephemeral=True)
 
-# Adicione mais comandos aqui se quiser
-
-    aclient.run('MTM4NTY0MDU2NzE4MTkzODgwMA.GBt5GZ.gk7dYh7F1ComGhjesv5weuP4qyugW41aY9KUys')
+import os
+bot.run(os.getenv("DISCORD_TOKEN"))
