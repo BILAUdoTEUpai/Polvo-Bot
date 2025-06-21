@@ -76,11 +76,4 @@ async def embed(interaction: discord.Interaction, titulo: str, descricao: str, c
 
 # Adicione mais comandos aqui se quiser
 
-import os
-
-# Use variável de ambiente para o token
-token = os.getenv('DISCORD_BOT_TOKEN')
-if not token:
-    print("❌ Token do Discord não encontrado. Configure a variável DISCORD_BOT_TOKEN.")
-else:
-    aclient.run(token)
+    aclient.run('MTM4NTY0MDU2NzE4MTkzODgwMA.GBt5GZ.gk7dYh7F1ComGhjesv5weuP4qyugW41aY9KUys')
