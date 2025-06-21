@@ -76,5 +76,20 @@ async def embed(interaction: discord.Interaction, titulo: str, descricao: str, c
 
 # Adicione mais comandos aqui se quiser
 
+from flask import Flask
+import threading
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return '🐙 Polvo-Bot está online!'
+
+def run_flask():
+    app.run(host='0.0.0.0', port=8080)
+
+# Iniciar o Flask em uma thread separada
+threading.Thread(target=run_flask).start()
+
 import os
 aclient.run(os.environ['DISCORD_TOKEN'])
